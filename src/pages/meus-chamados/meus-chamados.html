@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons start>
+      <button ion-button icon-only>
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Meus Chamados
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page13">
+    <ion-list *ngFor="let chamado of chamados">
+        <ion-item>
+          <h2>{{chamado.tipo_chamado}}</h2>
+          <p>{{chamado.descricao}}</p>
+        </ion-item>
+      </ion-list>
+</ion-content>

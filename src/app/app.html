@@ -1,0 +1,27 @@
+<ion-menu [content]="mainContent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Sobre
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content id="side-menu21">
+    <ion-list id="sobre-list1">
+      <ion-item color="none" menuClose="" on-click="goToSobreOMunicPio()" id="sobre-list-item1">
+        Município
+        <ion-icon name="information-circle" item-right></ion-icon>
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToSobreOAplicativo()" id="sobre-list-item2">
+        Aplicativo
+        <ion-icon name="information-circle" item-right></ion-icon>
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToDocumentos()" id="sobre-list-item3">
+        Documentos
+        <ion-icon name="document" item-right></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>

@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons start>
+      <button ion-button icon-only>
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Meu Vereador
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page7">
+  <ion-list id="meuVereador-list3">
+    <ion-item color="none" on-click="goToCMara()" id="meuVereador-list-item4">
+      <ion-thumbnail item-left>
+        <img src="assets/img/VXAVedW9QLaSLRAEV6DM_icone-acesso-informacao.png" />
+      </ion-thumbnail>
+      <h2>
+        Câmara
+      </h2>
+    </ion-item>
+    <ion-item color="none" on-click="goToMandato()" id="meuVereador-list-item7">
+      <ion-thumbnail item-left>
+        <img src="assets/img/ddBbxPVmRjqAWxML4wBK_icone-acesso-informacao.png" />
+      </ion-thumbnail>
+      <h2>
+        Mandato
+      </h2>
+    </ion-item>
+    <ion-item-sliding>
+      <ion-item color="none" on-click="goToCanalDireto()" id="meuVereador-list-item5">
+        <ion-thumbnail item-left>
+          <img src="assets/img/vv9R4dnZQui1KZoRyaTj_canaldireto.png" />
+        </ion-thumbnail>
+        <h2>
+          Canal Direto
+        </h2>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button color="positive"></button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item color="none" on-click="goToEnquetes()" id="meuVereador-list-item6">
+      <ion-thumbnail item-left>
+        <img src="assets/img/VEW9hOYsSe0WUO52CHXH_enquete.png" />
+      </ion-thumbnail>
+      <h2>
+        Enquetes
+      </h2>
+    </ion-item>
+  </ion-list>
+</ion-content>

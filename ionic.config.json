@@ -1,0 +1,7 @@
+{
+  "name": "MeuVereador",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
