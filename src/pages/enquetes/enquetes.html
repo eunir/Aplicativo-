@@ -5,7 +5,7 @@
     </button>
     <ion-buttons start>
       <button ion-button icon-only>
-        <ion-icon name="arrow-back"></ion-icon>
+        
       </button>
     </ion-buttons>
     <ion-title>
@@ -14,50 +14,77 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page11">
-    <ion-list>
-        <ion-item-sliding *ngFor="let country of countries">
-          <ion-item>
-            <ion-card>
-                <img [src]="urlImg" (click)="show()" />
-                <ion-fab right bottom>
-                    <button ion-fab (click)="edit()">
-                    <ion-icon name="brush"></ion-icon>
-                  </button>
-                  </ion-fab>
-                  <div class="card-title">Amsterdam</div>
-    
-            </ion-card>
+  <ion-list *ngFor="let e of enquetes">
+
+    <div>
+      <ion-card padding="10px">
+
+          <ion-card-header>
+              <ion-item-divider color="light" id="enquetes-list-item-divider4">
+                  Votação Atualizada
+                </ion-item-divider>
+              <ion-grid>
+                  <ion-row>
+                    <ion-col>
+                      <div><h5>A Favor:</h5>{{e.num_votos_afavor}} </div>
+                    </ion-col>
+                    <ion-col>
+                        <div> 
+                        </div>
+                      </ion-col>
+                    <ion-col>
+                      <div><h5>Contra:</h5> {{e.num_votos_contra}}</div>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+          </ion-card-header>
+        
+          <ion-card-content>
+              <ion-card>
+                  <ion-card-header>
+                  </ion-card-header>
+                  <ion-card-content>
+                   <p>{{e.descricao_enquete}}</p>
+                  </ion-card-content>
+                
+                </ion-card>
+          </ion-card-content>
+          
+          <div class="spacer" style="width:300px;height:10px;" id="enquetes-spacer8"></div>
+
+        <form [formGroup]="validaVotacao" id="enquetes-form7">
+          <ion-item id="enquetes-textarea3">
+            <ion-label>
+              Comentário
+            </ion-label>
+            <ion-textarea placeholder="" class="validaVotacao" formControlName="comentario_voto"></ion-textarea>
           </ion-item>
-        </ion-item-sliding>
-      </ion-list>
+          <div class="spacer" style="width:300px;height:24px;" id="enquetes-spacer9"></div>
+          <ion-item-divider color="light" id="enquetes-list-item-divider4">
+            Sua opinião é muito Importante
+          </ion-item-divider>
+          <ion-item>
+              <ion-label>
+                Adicione seu Voto
+              </ion-label>
+              <ion-select class="validaVotacao" formControlName="alternativa">
+                <ion-option value=1>
+                  Sim
+                </ion-option>
+                <ion-option value=2>
+                  Não
+                </ion-option>
+              </ion-select>
+            </ion-item>
+        </form>
+        <button (click)="votacaoEnquete()"id="enquetes-button11" ion-button color="positive" block>
+            Concluir
+        </button>
+      </ion-card>
+    </div>
+  </ion-list>
+  
     
 
-  <div class="spacer" style="width:300px;height:10px;" id="enquetes-spacer8"></div>
-  <form id="enquetes-form7">
-    <ion-item id="enquetes-textarea3">
-      <ion-label>
-        Comentário
-      </ion-label>
-      <ion-textarea placeholder=""></ion-textarea>
-    </ion-item>
-    <div class="spacer" style="width:300px;height:24px;" id="enquetes-spacer9"></div>
-    <ion-item-divider color="light" id="enquetes-list-item-divider4">
-      Votar
-    </ion-item-divider>
-    <ion-item name="sim" id="enquetes-checkbox2">
-      <ion-label>
-        Sim
-      </ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
-    <ion-item name="nao" id="enquetes-checkbox3">
-      <ion-label>
-        Não
-      </ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
-  </form>
-  <button id="enquetes-button11" ion-button color="positive" block on-click="goToMeuVereador()">
-    Concluir
-  </button>
+  
 </ion-content>

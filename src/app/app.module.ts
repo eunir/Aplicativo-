@@ -26,6 +26,10 @@ import { CMaraPage } from '../pages/c-mara/c-mara';
 import {HttpModule} from '@angular/http';
 import { UsuariosProvider } from '../providers/usuarios/usuarios';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { VideoCapturePlus } from '@ionic-native/video-capture-plus';
+import { Camera } from '@ionic-native/camera';
+import { Geolocation } from '@ionic-native/geolocation';
 
 
 
@@ -52,7 +56,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
+    
    
     
    
@@ -79,7 +85,12 @@ import { HttpClientModule } from '@angular/common/http';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    UsuariosProvider
+    UsuariosProvider,
+    Camera,
+    VideoCapturePlus,
+    Geolocation
+    
+    
   ]
 })
 export class AppModule {}

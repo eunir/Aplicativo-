@@ -5,7 +5,7 @@
     </button>
     <ion-buttons start>
       <button ion-button icon-only>
-        <ion-icon name="arrow-back"></ion-icon>
+        
       </button>
     </ion-buttons>
     <ion-title>
@@ -13,11 +13,53 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding id="page13">
-    <ion-list *ngFor="let chamado of chamados">
-        <ion-item>
-          <h2>{{chamado.tipo_chamado}}</h2>
-          <p>{{chamado.descricao}}</p>
-        </ion-item>
-      </ion-list>
+<ion-content class="card-background-page" paddin id="page13">
+    <ion-item>
+        <ion-label>
+          Selecione um status!
+        </ion-label>
+        <ion-select [(ngModel)]="$status" (ionChange)="getChamadosStatus()" >
+          <ion-option value=1>
+            Aberto
+          </ion-option>
+          <ion-option value=2>
+            Em analise
+          </ion-option>
+          <ion-option value=3>
+            Em andamento
+          </ion-option>
+          <ion-option value=4>
+            Finalizados
+          </ion-option>
+        </ion-select>
+      </ion-item>
+  <ion-list *ngFor="let c of chamados">
+    <ion-card >
+      <ion-card-header>
+          <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <div><h5>Tipo:</h5>{{c.tipo_chamado}} </div>
+                </ion-col>
+                <ion-col>
+                    <div></div>
+                  </ion-col>
+                <ion-col>
+                  <div><h5>Status:</h5> {{c.status_chamado}}</div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <div  class="p">
+          <ion-card>
+              {{c.descricao}}
+          </ion-card>
+        </div>
+      
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+  
 </ion-content>

@@ -3,71 +3,74 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-buttons start>
-      <button ion-button icon-only>
-        <ion-icon name="arrow-back"></ion-icon>
-      </button>
-    </ion-buttons>
+    
     <ion-title>
       Chamados
     </ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page12">
-  <ion-list id="chamados-list6">
-    <ion-item-divider color="light" id="chamados-list-item-divider3">
-      Informe os dados a seguir
-    </ion-item-divider>
-    <ion-item id="chamados-select1">
-      <ion-label>
-        Tipo
-      </ion-label>
-      <ion-select name="TipoChamado">
-        <ion-option>
-          Denúncia
-        </ion-option>
-        <ion-option>
-          Reclamação
-        </ion-option>
-        <ion-option>
-          Sugestão
-        </ion-option>
-        <ion-option>
-          Elogios
-        </ion-option>
-      </ion-select>
-    </ion-item>
-    <ion-item id="chamados-textarea2">
-      <ion-label>
-        Descrição
-      </ion-label>
-      <ion-textarea placeholder=""></ion-textarea>
-    </ion-item>
-    <ion-item id="chamados-input11">
-      <ion-label>
-        Data
-      </ion-label>
-      <ion-input type="date" placeholder="" name="dataAbertura"></ion-input>
-    </ion-item>
-  </ion-list>
-  <form id="chamados-form8">
-    <ion-item id="chamados-toggle2">
-      <ion-label>
-        Localização
-      </ion-label>
-      <ion-toggle color="positive" checked="false"></ion-toggle>
-    </ion-item>
-  </form>
-  <button id="chamados-button7" ion-button color="light" block icon-left>
-    <ion-icon name="camera"></ion-icon>
-    Adcionar imagem
+
+  <div  [formGroup]="validaChamado">
+
+    <ion-list id="chamados-list6">
+      <ion-item-divider color="light" id="chamados-list-item-divider3">
+        Informe os dados a seguir
+      </ion-item-divider>
+      <ion-item id="chamados-select1">
+        <ion-label>
+          Tipo
+        </ion-label>
+        <ion-select formControlName="tipo_chamado">
+          <ion-option>
+            Denúncia
+          </ion-option>
+          <ion-option>
+            Reclamação
+          </ion-option>
+          <ion-option>
+            Sugestão
+          </ion-option>
+          <ion-option>
+            Elogios
+          </ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item id="chamados-textarea2">
+        <ion-label>
+          Descrição
+        </ion-label>
+        <ion-textarea placeholder="" formControlName="descricao"></ion-textarea>
+      </ion-item>
+      <ion-item id="chamados-input11">
+        <ion-label>
+          Data
+        </ion-label>
+        <ion-input type="date" placeholder="" formControlName="data_abertura"></ion-input>
+      </ion-item>
+    </ion-list>
+    <form id="chamados-form8">
+      <ion-item id="chamados-toggle2">
+        <ion-label>
+          Localização
+        </ion-label>
+        <ion-toggle color="positive" (ionChange)=pegarLocalizacao()></ion-toggle>
+      </ion-item>
+    </form>
+    <button (click)="tirarFoto()" id="chamados-button7" ion-button color="light" block icon-left>
+      <ion-icon name="camera"></ion-icon>
+      Adcionar imagem
   </button>
-  <button id="chamados-button8" ion-button color="light" block icon-left>
-    <ion-icon name="videocam"></ion-icon>
-    Adicionar Video
-  </button>
-  <div class="spacer" style="width:300px;height:43px;" id="chamados-spacer7"></div>
-  <button id="chamados-button9" ion-button color="positive" block on-click="goToMeuVereador()">
-    Concluir Chamado
-  </button>
+    <button (click)="gravarVideo()"id="chamados-button8" ion-button color="light" block icon-left>
+      <ion-icon name="videocam"></ion-icon>
+      Adicionar Video
+    </button>
+    <div class="spacer" style="width:300px;height:43px;" id="chamados-spacer7"></div>
+    <button (click)="salvarChamado()"id="chamados-button9" ion-button color="positive" block on-click="goToMeuVereador()">
+      Concluir Chamado
+    </button>
+  </div>
+
+  
+
 </ion-content>

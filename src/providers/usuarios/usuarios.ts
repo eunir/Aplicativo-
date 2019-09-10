@@ -1,6 +1,6 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+//import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Http, Headers, Response, RequestOptions } from '@angular/http';
+import { Http, Headers, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 
@@ -33,6 +33,7 @@ export class UsuariosProvider {
         .subscribe(res => {
           let data = res.json();
           resolve(data);
+          
 
         }, (err) => {
           reject(err);
@@ -89,11 +90,34 @@ postLogin(usuario){
     });
   }
 */
+//Criar chamado
+criarChamado(data){
+  return new Promise((resolve, reject) => {
+
+    let headers = new Headers();
+    headers.append('Content-Type','application/json');
+
+
+    this.http.post(this.url+'/chamados', JSON.stringify(data), {headers: headers})
+      .subscribe(res => {
+        let data = res.json();
+        resolve(data);
+        
+
+      }, (err) => {
+        reject(err);
+      });
+  });
+}
+
 listarChamados(){
   return new Promise((resolve, reject) => {
 
     let headers = new Headers();
     headers.append('Content-Type','application/json');
+    headers.append("Access-Controll-Allow-Origin","*");
+    headers.append("Access-Controll-Allow-Methods","POST, GET, OPTIONS, PUT");
+    headers.append("Content-Type","application/json");
     
     this.http.get(this.url+'/chamados')
     .subscribe((result: any)=>{
@@ -105,8 +129,66 @@ listarChamados(){
   });
 
  }
+
+ listarChamadosStatus(data: number){
+  return new Promise((resolve, reject) => {
+
+    let headers = new Headers();
+    headers.append('Content-Type','application/json');
+    headers.append("Access-Controll-Allow-Origin","*");
+    headers.append("Access-Controll-Allow-Methods","POST, GET, OPTIONS, PUT");
+    headers.append("Content-Type","application/json");
+    
+    this.http.get(this.url+'/chamados/'+'status/'+ data)
+    .subscribe((result: any)=>{
+      resolve(result.json());
+    },
+      (error) => {
+        reject(error.json());
+      })
+  });
+ }
+
+ //Listar as enquetes
+ listarEnquetes(){
+  return new Promise((resolve, reject) => {
+
+    let headers = new Headers();
+    headers.append('Content-Type','application/json');
+    headers.append("Access-Controll-Allow-Origin","*");
+    headers.append("Access-Controll-Allow-Methods","POST, GET, OPTIONS, PUT");
+    headers.append("Content-Type","application/json");
+    
+    this.http.get(this.url+'/enquetes')
+    .subscribe((result: any)=>{
+      resolve(result.json());
+    },
+      (error) => {
+        reject(error.json());
+      })
+  });
 }
-  
+
+//Votação de enquetes
+votacao(data){
+  return new Promise((resolve, reject) => {
+
+    let headers = new Headers();
+    headers.append('Content-Type','application/json');
+
+
+    this.http.post(this.url+'/votos', JSON.stringify(data), {headers: headers})
+      .subscribe(res => {
+        let data = res.json();
+        resolve(data);
+        
+
+      }, (err) => {
+        reject(err);
+      });
+  });
+}
+}
 
   
 

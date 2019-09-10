@@ -9,53 +9,53 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page6">
-  <form id="cadastreSe-form2" (ngSubmit)="salvarUsuario()">
+  <form [formGroup]="validaUsuario" id="cadastreSe-form2">
     <ion-list id="cadastreSe-list2">
       <ion-item id="cadastreSe-input3">
         <ion-label>
           Nome
         </ion-label>
-        <ion-input type="text" placeholder="" [(ngModel)]="usuario.nome_usuario" name="nome_usuario"></ion-input>
+        <ion-input type="text" placeholder="" formControlName="nome_usuario"></ion-input>
       </ion-item>
       <ion-item id="cadastreSe-input4">
         <ion-label>
           Endereço
         </ion-label>
-        <ion-input type="text" placeholder="" [(ngModel)]="usuario.endereco" name="endereco"></ion-input>
+        <ion-input type="text" placeholder=""  formControlName="endereco"></ion-input>
       </ion-item>
       <ion-item id="cadastreSe-input5">
         <ion-label>
           CPF
         </ion-label>
-        <ion-input type="text" placeholder="" [(ngModel)]="usuario.cpf_usuario" name="cpf_usuario"></ion-input>
+        <ion-input type="text" placeholder=""  formControlName="cpf_usuario"></ion-input>
       </ion-item>
       <ion-item id="cadastreSe-input6">
         <ion-label>
           E-mail
         </ion-label>
-        <ion-input type="email" placeholder="" [(ngModel)]="usuario.email_usuario" name="email_usuario"></ion-input>
+        <ion-input type="email" placeholder=""  formControlName="email_usuario"></ion-input>
       </ion-item>
       <ion-item id="cadastreSe-input7">
         <ion-label>
           Cidade
         </ion-label>
-        <ion-input type="text" placeholder="" [(ngModel)]="usuario.cidade_usuario" name="cidade_usuario"></ion-input>
+        <ion-input type="text" placeholder=""  formControlName="cidade_usuario"></ion-input>
       </ion-item>
       <ion-item id="cadastreSe-input8">
         <ion-label>
           Usuário
         </ion-label>
-        <ion-input type="text" placeholder="" [(ngModel)]="usuario.usuario" name="usuario"></ion-input>
+        <ion-input type="text" placeholder=""  formControlName="usuario"></ion-input>
       </ion-item>
       <ion-item id="cadastreSe-input9">
         <ion-label>
           Senha
         </ion-label>
-        <ion-input type="text" placeholder="" [(ngModel)]="usuario.senha" name="senha"></ion-input>
+        <ion-input type="text" placeholder=""  formControlName="senha"></ion-input>
       </ion-item>
     </ion-list>
     <div>
-      <button id="cadastreSe-button3" ion-button color="positive" block>Salvar</button>
+      <button (click)="salvarUsuario()" [disabled]="!validaUsuario.valid"id="cadastreSe-button3" ion-button color="positive" block>Salvar</button>
     </div>
   </form>
     <div class="botoes">
