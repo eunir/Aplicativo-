@@ -30,6 +30,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { VideoCapturePlus } from '@ionic-native/video-capture-plus';
 import { Camera } from '@ionic-native/camera';
 import { Geolocation } from '@ionic-native/geolocation';
+import { Facebook } from '@ionic-native/facebook';
+
 
 
 
@@ -88,8 +90,8 @@ import { Geolocation } from '@ionic-native/geolocation';
     UsuariosProvider,
     Camera,
     VideoCapturePlus,
-    Geolocation
-    
+    Geolocation,
+    Facebook
     
   ]
 })

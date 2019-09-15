@@ -1,12 +1,4 @@
 {
-  "cordova-plugin-whitelist": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-whitelist@1.3.3"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-statusbar": {
     "source": {
       "type": "registry",
@@ -101,12 +93,23 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-android-support-gradle-release": {
+  "cordova-plugin-whitelist": {
     "source": {
       "type": "registry",
-      "id": "cordova-android-support-gradle-release"
+      "id": "cordova-plugin-whitelist@1.3.4"
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-facebook4": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-facebook4"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID": "491994388250343",
+      "APP_NAME": "Meu Vereador"
+    }
   }
 }

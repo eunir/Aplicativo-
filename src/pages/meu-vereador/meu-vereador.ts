@@ -6,6 +6,7 @@ import { CanalDiretoPage } from '../canal-direto/canal-direto';
 import { ChamadosPage } from '../chamados/chamados';
 
 import { EnquetesPage } from '../enquetes/enquetes';
+import { LoginPage } from '../login/login';
 
 @Component({
   selector: 'page-meu-vereador',
@@ -14,6 +15,10 @@ import { EnquetesPage } from '../enquetes/enquetes';
 export class MeuVereadorPage {
 
   constructor(public navCtrl: NavController) {
+  }
+
+  sair(){
+    this.navCtrl.setRoot(LoginPage);
   }
   goToCMara(params){
     if (!params) params = {};
