@@ -103,4 +103,8 @@
     </plugin>
     <plugin name="cordova-plugin-geolocation" spec="^4.0.2" />
     <plugin name="cordova-plugin-compat" spec="^1.2.0" />
+    <plugin name="cordova-plugin-facebook4" spec="^1.9.1">
+        <variable name="APP_ID" value="491994388250343" />
+        <variable name="APP_NAME" value="Meu Vereador" />
+    </plugin>
 </widget>
