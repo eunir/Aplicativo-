@@ -58,7 +58,7 @@ var SobreOAplicativoPage = /** @class */ (function () {
     }
     SobreOAplicativoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-sobre-oaplicativo',template:/*ion-inline-start:"C:\xampp\htdocs\Aplicativo-\src\pages\sobre-oaplicativo\sobre-oaplicativo.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>\n\n      Sobre o Aplicativo\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding id="page2"></ion-content>'/*ion-inline-end:"C:\xampp\htdocs\Aplicativo-\src\pages\sobre-oaplicativo\sobre-oaplicativo.html"*/
+            selector: 'page-sobre-oaplicativo',template:/*ion-inline-start:"C:\xampp\htdocs\Aplicativo-\src\pages\sobre-oaplicativo\sobre-oaplicativo.html"*/'<ion-header>\n\n  <ion-navbar color="camara">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>\n\n      Sobre o Aplicativo\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding id="page2"></ion-content>'/*ion-inline-end:"C:\xampp\htdocs\Aplicativo-\src\pages\sobre-oaplicativo\sobre-oaplicativo.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], SobreOAplicativoPage);
@@ -93,7 +93,7 @@ var DocumentosPage = /** @class */ (function () {
     }
     DocumentosPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-documentos',template:/*ion-inline-start:"C:\xampp\htdocs\Aplicativo-\src\pages\documentos\documentos.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>\n\n      Documentos\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding id="page3"></ion-content>'/*ion-inline-end:"C:\xampp\htdocs\Aplicativo-\src\pages\documentos\documentos.html"*/
+            selector: 'page-documentos',template:/*ion-inline-start:"C:\xampp\htdocs\Aplicativo-\src\pages\documentos\documentos.html"*/'<ion-header>\n\n  <ion-navbar color="camara">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>\n\n      Documentos\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding id="page3"></ion-content>'/*ion-inline-end:"C:\xampp\htdocs\Aplicativo-\src\pages\documentos\documentos.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], DocumentosPage);
@@ -143,31 +143,31 @@ var CadastreSePage = /** @class */ (function () {
             senha: '',
         };
         this.validaUsuario = this.formBuilder.group({
-            nome_usuario: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required
+            nome_usuario: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].required
                 ])],
-            endereco: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required,
-                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].maxLength(30)
+            endereco: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].required,
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].maxLength(30)
                 ])],
-            cpf_usuario: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required,
-                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].maxLength(11),
-                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].minLength(11)
+            cpf_usuario: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].required,
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].maxLength(11),
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].minLength(11)
                 ])],
-            email_usuario: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required,
-                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].pattern(/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/)
+            email_usuario: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].required,
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].pattern(/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/)
                 ])],
-            cidade_usuario: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required
+            cidade_usuario: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].required
                 ])],
             nivel_acesso: ['1'],
-            usuario: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required
+            usuario: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].required
                 ])],
-            senha: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required
+            senha: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].required
                 ])],
         });
     }
@@ -312,7 +312,7 @@ var SobreOMunicPioPage = /** @class */ (function () {
     }
     SobreOMunicPioPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-sobre-omunic-pio',template:/*ion-inline-start:"C:\xampp\htdocs\Aplicativo-\src\pages\sobre-omunic-pio\sobre-omunic-pio.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>\n\n      Sobre o Município\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding id="page1"></ion-content>'/*ion-inline-end:"C:\xampp\htdocs\Aplicativo-\src\pages\sobre-omunic-pio\sobre-omunic-pio.html"*/
+            selector: 'page-sobre-omunic-pio',template:/*ion-inline-start:"C:\xampp\htdocs\Aplicativo-\src\pages\sobre-omunic-pio\sobre-omunic-pio.html"*/'<ion-header>\n\n  <ion-navbar color="camara">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>\n\n      Sobre o Município\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding id="page1"></ion-content>'/*ion-inline-end:"C:\xampp\htdocs\Aplicativo-\src\pages\sobre-omunic-pio\sobre-omunic-pio.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], SobreOMunicPioPage);
@@ -430,7 +430,7 @@ var AppModule = /** @class */ (function () {
                 }),
                 __WEBPACK_IMPORTED_MODULE_19__angular_http__["c" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_21__angular_common_http__["a" /* HttpClientModule */],
-                __WEBPACK_IMPORTED_MODULE_22__angular_forms__["f" /* ReactiveFormsModule */]
+                __WEBPACK_IMPORTED_MODULE_22__angular_forms__["e" /* ReactiveFormsModule */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
@@ -935,7 +935,7 @@ var MandatoPage = /** @class */ (function () {
     }
     MandatoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-mandato',template:/*ion-inline-start:"C:\xampp\htdocs\Aplicativo-\src\pages\mandato\mandato.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-buttons start>\n\n      <button ion-button icon-only>\n\n        <ion-icon name="arrow-back"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>\n\n      Mandato\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding id="page9"></ion-content>'/*ion-inline-end:"C:\xampp\htdocs\Aplicativo-\src\pages\mandato\mandato.html"*/
+            selector: 'page-mandato',template:/*ion-inline-start:"C:\xampp\htdocs\Aplicativo-\src\pages\mandato\mandato.html"*/'<ion-header>\n\n  <ion-navbar color="camara">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-buttons start>\n\n      <button ion-button icon-only>\n\n        <ion-icon name="arrow-back"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>\n\n      Mandato\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding id="page9"></ion-content>'/*ion-inline-end:"C:\xampp\htdocs\Aplicativo-\src\pages\mandato\mandato.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], MandatoPage);
@@ -979,21 +979,54 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var LoginPage = /** @class */ (function () {
     function LoginPage(navCtrl, formBuilder, provider, facebook) {
         this.navCtrl = navCtrl;
-        this.formBuilder = formBuilder;
         this.provider = provider;
         this.facebook = facebook;
+        this.messageEmail = "";
+        this.messagePassword = "";
+        this.errorEmail = false;
+        this.errorPassword = false;
+        //private login : FormGroup;
         this.userData = null;
-        this.login = this.formBuilder.group({
-            usuario: new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["b" /* FormControl */]('', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required),
-            senha: new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["b" /* FormControl */]('', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required)
+        this.loginForm = formBuilder.group({
+            email: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].required],
+            password: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].minLength(3), __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].maxLength(20),
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].required])]
         });
     }
     LoginPage_1 = LoginPage;
+    //this.login = this.formBuilder.group({
+    //usuario: new FormControl('', Validators.required),
+    //senha: new FormControl('', Validators.required)
+    //});
+    //----------------------------------------------------------------------
+    LoginPage.prototype.login = function () {
+        var _a = this.loginForm.controls, email = _a.email, password = _a.password;
+        if (!this.loginForm.valid) {
+            if (!email.valid) {
+                this.errorEmail = true;
+                this.messageEmail = "Email inválido!";
+            }
+            else {
+                this.messageEmail = "";
+            }
+            if (!password.valid) {
+                this.errorPassword = true;
+                this.messagePassword = "A senha é obrigatória!";
+            }
+            else {
+                this.messagePassword = "";
+            }
+        }
+        else {
+            this.logForm();
+        }
+    };
+    //-------------------------------------------------------------------------
     LoginPage.prototype.logForm = function () {
         var _this = this;
         //console.log(this.login);
-        this.usuario = this.login.value.usuario;
-        this.senha = this.login.value.senha;
+        this.usuario = this.loginForm.value.email;
+        this.senha = this.loginForm.value.password;
         this.provider.login(this.usuario, this.senha).then(function (data) {
             console.log(data);
             if (data == 0) {
@@ -1020,12 +1053,13 @@ var LoginPage = /** @class */ (function () {
                 usuario.senha = res.id;
                 usuario.login = res.email;
                 _this.logar(usuario);
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__meu_vereador_meu_vereador__["a" /* MeuVereadorPage */]);
             }, function (error) {
-                alert(error);
+                alert('Não foi possível realizar login!');
                 console.log('ERRO LOGIN: ', error);
             });
         }, function (error) {
-            alert(error);
+            alert('Não foi possível realizar login!');
         });
     };
     LoginPage.prototype.logar = function (usuario) {
@@ -1051,7 +1085,7 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = LoginPage_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\xampp\htdocs\Aplicativo-\src\pages\login\login.html"*/'<ion-header>\n\n  <ion-navbar color="camara">\n\n    <ion-title>\n\n      Login\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding id="page5">\n\n    <ion-card class="loginCard">\n\n\n\n        <ion-card-header>\n\n            <img src="assets/img/yVRt1GPSQa19tC6clz3w_logo.jpg" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;" />\n\n        </ion-card-header>\n\n        <div class="spacer" style="width:300px;height:30px;" id="login-spacer1"></div>\n\n        <ion-card-content>\n\n            <form [formGroup]="login" (ngSubmit)="logForm()">\n\n                <ion-item>\n\n                  <ion-label>Usuario</ion-label>\n\n                  <ion-input type="text" formControlName="usuario"></ion-input>\n\n                </ion-item>\n\n                <ion-item>\n\n                  <ion-label>Senha</ion-label>\n\n                  <ion-input formControlName="senha"></ion-input>\n\n                </ion-item>\n\n                <button ion-button type="submit" block>Login</button>\n\n              </form>\n\n            \n\n              <button id="login-button1" ion-button color="positive" block on-click="goToPgMeuVereador()">\n\n                Acessar\n\n              </button>\n\n              <button ion-button full icon-left (click)=\'loginFacebook();\'>\n\n                <ion-icon name="logo-facebook"></ion-icon>Login com Facebook\n\n              </button>\n\n              <button id="login-button2" ion-button color="light" block style="color:#2263F3;" on-click="goToCadastreSe()">\n\n                Ou Cadastre-se\n\n              </button>\n\n        </ion-card-content>\n\n      \n\n      </ion-card>\n\n  \n\n \n\n  \n\n  \n\n</ion-content>'/*ion-inline-end:"C:\xampp\htdocs\Aplicativo-\src\pages\login\login.html"*/
+            selector: 'page-login',template:/*ion-inline-start:"C:\xampp\htdocs\Aplicativo-\src\pages\login\login.html"*/'<ion-header>\n\n    \n\n</ion-header>\n\n<ion-content padding id="page5" class="content">\n\n    <div class="spacer" style="width:300px;height:40px;" id="login-spacer1"></div>\n\n  <div class="login">\n\n    <ion-card>\n\n\n\n        <ion-card-header>\n\n            <img src="assets/img/yVRt1GPSQa19tC6clz3w_logo.jpg" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;" />\n\n        </ion-card-header>\n\n        <div class="spacer" style="width:300px;height:30px;" id="login-spacer1"></div>\n\n        <ion-card-content>\n\n\n\n            <form [formGroup]="loginForm" (submit)="login()" novalidate>\n\n\n\n                <ion-item>\n\n                  <ion-label>Usuario</ion-label>\n\n                  <ion-input  [(ngModel)]="email"\n\n                              formControlName="email"\n\n                              type="text"\n\n                              placeholder=""\n\n                              clearInput clearOnEdit="false">\n\n                  </ion-input>\n\n                </ion-item>\n\n                <h6 *ngIf="errorEmail" class="error">{{messageEmail}}</h6>\n\n\n\n                <ion-item>\n\n                  <ion-label>Senha</ion-label>\n\n                  <ion-input  [(ngModel)]="password"\n\n                              formControlName="password"\n\n                              type="password"\n\n                              placeholder=""\n\n                              clearInput clearOnEdit="false">\n\n                  </ion-input>\n\n                </ion-item>\n\n                <h6 *ngIf="errorPassword" class="error"> {{messagePassword}}</h6>\n\n\n\n                <div class="spacer" style="width:300px;height:30px;" id="login-spacer1"></div>\n\n                <button ion-button block outline color="camara" type="submit">Login</button>\n\n              </form>\n\n            \n\n              <button ion-button full icon-left (click)=\'loginFacebook();\'>\n\n                <ion-icon name="logo-facebook"></ion-icon>Login com Facebook\n\n              </button>\n\n            \n\n              <button id="login-button2" ion-button color="light" block style="color:camara;" on-click="goToCadastreSe()">\n\n                Ou Cadastre-se\n\n              </button>\n\n              <button id="login-button1" ion-button color="camara" block on-click="goToPgMeuVereador()">\n\n                  Acessar\n\n                </button>\n\n        </ion-card-content>\n\n      \n\n      </ion-card>\n\n    </div>\n\n \n\n  \n\n  \n\n</ion-content>'/*ion-inline-end:"C:\xampp\htdocs\Aplicativo-\src\pages\login\login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormBuilder */],
@@ -1220,21 +1254,21 @@ var ChamadosPage = /** @class */ (function () {
             id_usuario: '',
         };
         this.validaChamado = this.formBuilder.group({
-            tipo_chamado: ['', __WEBPACK_IMPORTED_MODULE_7__angular_forms__["g" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_7__angular_forms__["g" /* Validators */].required
+            tipo_chamado: ['', __WEBPACK_IMPORTED_MODULE_7__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_7__angular_forms__["f" /* Validators */].required
                 ])],
-            descricao: ['', __WEBPACK_IMPORTED_MODULE_7__angular_forms__["g" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_7__angular_forms__["g" /* Validators */].required
+            descricao: ['', __WEBPACK_IMPORTED_MODULE_7__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_7__angular_forms__["f" /* Validators */].required
                 ])],
             imagem_video: [''],
-            data_abertura: ['', __WEBPACK_IMPORTED_MODULE_7__angular_forms__["g" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_7__angular_forms__["g" /* Validators */].required
+            data_abertura: ['', __WEBPACK_IMPORTED_MODULE_7__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_7__angular_forms__["f" /* Validators */].required
                 ])],
-            longitude: ['', __WEBPACK_IMPORTED_MODULE_7__angular_forms__["g" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_7__angular_forms__["g" /* Validators */].required
+            longitude: ['', __WEBPACK_IMPORTED_MODULE_7__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_7__angular_forms__["f" /* Validators */].required
                 ])],
-            latitude: ['', __WEBPACK_IMPORTED_MODULE_7__angular_forms__["g" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_7__angular_forms__["g" /* Validators */].required
+            latitude: ['', __WEBPACK_IMPORTED_MODULE_7__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_7__angular_forms__["f" /* Validators */].required
                 ])],
             id_usuario: ['1'],
         });
@@ -1320,7 +1354,7 @@ var ChamadosPage = /** @class */ (function () {
     };
     ChamadosPage = ChamadosPage_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-chamados',template:/*ion-inline-start:"C:\xampp\htdocs\Aplicativo-\src\pages\chamados\chamados.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    \n\n    <ion-title>\n\n      Chamados\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding id="page12">\n\n\n\n  <div  [formGroup]="validaChamado">\n\n\n\n    <ion-list id="chamados-list6">\n\n      <ion-item-divider color="light" id="chamados-list-item-divider3">\n\n        Informe os dados a seguir\n\n      </ion-item-divider>\n\n      <ion-item id="chamados-select1">\n\n        <ion-label>\n\n          Tipo\n\n        </ion-label>\n\n        <ion-select formControlName="tipo_chamado">\n\n          <ion-option>\n\n            Denúncia\n\n          </ion-option>\n\n          <ion-option>\n\n            Reclamação\n\n          </ion-option>\n\n          <ion-option>\n\n            Sugestão\n\n          </ion-option>\n\n          <ion-option>\n\n            Elogios\n\n          </ion-option>\n\n        </ion-select>\n\n      </ion-item>\n\n      <ion-item id="chamados-textarea2">\n\n        <ion-label>\n\n          Descrição\n\n        </ion-label>\n\n        <ion-textarea placeholder="" formControlName="descricao"></ion-textarea>\n\n      </ion-item>\n\n      <ion-item id="chamados-input11">\n\n        <ion-label>\n\n          Data\n\n        </ion-label>\n\n        <ion-input type="date" placeholder="" formControlName="data_abertura"></ion-input>\n\n      </ion-item>\n\n    </ion-list>\n\n    <form id="chamados-form8">\n\n      <ion-item id="chamados-toggle2">\n\n        <ion-label>\n\n          Localização\n\n        </ion-label>\n\n        <ion-toggle color="positive" (ionChange)=pegarLocalizacao()></ion-toggle>\n\n      </ion-item>\n\n    </form>\n\n    <button (click)="tirarFoto()" id="chamados-button7" ion-button color="light" block icon-left>\n\n      <ion-icon name="camera"></ion-icon>\n\n      Adcionar imagem\n\n  </button>\n\n    <button (click)="gravarVideo()"id="chamados-button8" ion-button color="light" block icon-left>\n\n      <ion-icon name="videocam"></ion-icon>\n\n      Adicionar Video\n\n    </button>\n\n    <div class="spacer" style="width:300px;height:43px;" id="chamados-spacer7"></div>\n\n    <button (click)="salvarChamado()"id="chamados-button9" ion-button color="positive" block on-click="goToMeuVereador()">\n\n      Concluir Chamado\n\n    </button>\n\n  </div>\n\n\n\n  \n\n\n\n</ion-content>'/*ion-inline-end:"C:\xampp\htdocs\Aplicativo-\src\pages\chamados\chamados.html"*/
+            selector: 'page-chamados',template:/*ion-inline-start:"C:\xampp\htdocs\Aplicativo-\src\pages\chamados\chamados.html"*/'<ion-header>\n\n  <ion-navbar color="camara">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    \n\n    <ion-title>\n\n      Chamados\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding id="page12">\n\n\n\n  <div  [formGroup]="validaChamado">\n\n\n\n    <ion-list id="chamados-list6">\n\n      <ion-item-divider color="light" id="chamados-list-item-divider3">\n\n        Informe os dados a seguir\n\n      </ion-item-divider>\n\n      <ion-item id="chamados-select1">\n\n        <ion-label>\n\n          Tipo\n\n        </ion-label>\n\n        <ion-select formControlName="tipo_chamado">\n\n          <ion-option>\n\n            Denúncia\n\n          </ion-option>\n\n          <ion-option>\n\n            Reclamação\n\n          </ion-option>\n\n          <ion-option>\n\n            Sugestão\n\n          </ion-option>\n\n          <ion-option>\n\n            Elogios\n\n          </ion-option>\n\n        </ion-select>\n\n      </ion-item>\n\n      <ion-item id="chamados-textarea2">\n\n        <ion-label>\n\n          Descrição\n\n        </ion-label>\n\n        <ion-textarea placeholder="" formControlName="descricao"></ion-textarea>\n\n      </ion-item>\n\n      <ion-item id="chamados-input11">\n\n        <ion-label>\n\n          Data\n\n        </ion-label>\n\n        <ion-input type="date" placeholder="" formControlName="data_abertura"></ion-input>\n\n      </ion-item>\n\n    </ion-list>\n\n    <form id="chamados-form8">\n\n      <ion-item id="chamados-toggle2">\n\n        <ion-label>\n\n          Localização\n\n        </ion-label>\n\n        <ion-toggle color="positive" (ionChange)=pegarLocalizacao()></ion-toggle>\n\n      </ion-item>\n\n    </form>\n\n    <button (click)="tirarFoto()" id="chamados-button7" ion-button color="light" block icon-left>\n\n      <ion-icon name="camera"></ion-icon>\n\n      Adcionar imagem\n\n  </button>\n\n    <button (click)="gravarVideo()"id="chamados-button8" ion-button color="light" block icon-left>\n\n      <ion-icon name="videocam"></ion-icon>\n\n      Adicionar Video\n\n    </button>\n\n    <div class="spacer" style="width:300px;height:43px;" id="chamados-spacer7"></div>\n\n    <button (click)="salvarChamado()"id="chamados-button9" ion-button color="positive" block on-click="goToMeuVereador()">\n\n      Concluir Chamado\n\n    </button>\n\n  </div>\n\n\n\n  \n\n\n\n</ion-content>'/*ion-inline-end:"C:\xampp\htdocs\Aplicativo-\src\pages\chamados\chamados.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_8__providers_usuarios_usuarios__["a" /* UsuariosProvider */],
@@ -1387,14 +1421,14 @@ var EnquetesPage = /** @class */ (function () {
         this.getEnquetes();
         this.validaVotacao = this.formBuilder.group({
             comentario_voto: [''],
-            alternativa: ['', __WEBPACK_IMPORTED_MODULE_8__angular_forms__["g" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_8__angular_forms__["g" /* Validators */].required
+            alternativa: ['', __WEBPACK_IMPORTED_MODULE_8__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_8__angular_forms__["f" /* Validators */].required
                 ])],
-            id_usuario: ['1', __WEBPACK_IMPORTED_MODULE_8__angular_forms__["g" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_8__angular_forms__["g" /* Validators */].required
+            id_usuario: ['1', __WEBPACK_IMPORTED_MODULE_8__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_8__angular_forms__["f" /* Validators */].required
                 ])],
-            id_enquete: ['', __WEBPACK_IMPORTED_MODULE_8__angular_forms__["g" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_8__angular_forms__["g" /* Validators */].required
+            id_enquete: ['', __WEBPACK_IMPORTED_MODULE_8__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_8__angular_forms__["f" /* Validators */].required
                 ])],
         });
     }
@@ -1457,7 +1491,7 @@ var EnquetesPage = /** @class */ (function () {
     };
     EnquetesPage = EnquetesPage_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-enquetes',template:/*ion-inline-start:"C:\xampp\htdocs\Aplicativo-\src\pages\enquetes\enquetes.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-buttons start>\n\n      <button ion-button icon-only>\n\n        \n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>\n\n      Enquetes\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding id="page11">\n\n  <ion-list *ngFor="let e of enquetes">\n\n\n\n    <div>\n\n      <ion-card padding="10px">\n\n\n\n          <ion-card-header>\n\n              <ion-item-divider color="light" id="enquetes-list-item-divider4">\n\n                  Votação Atualizada\n\n                </ion-item-divider>\n\n              <ion-grid>\n\n                  <ion-row>\n\n                    <ion-col>\n\n                      <div><h5>A Favor:</h5>{{e.num_votos_afavor}} </div>\n\n                    </ion-col>\n\n                    <ion-col>\n\n                        <div> \n\n                        </div>\n\n                      </ion-col>\n\n                    <ion-col>\n\n                      <div><h5>Contra:</h5> {{e.num_votos_contra}}</div>\n\n                    </ion-col>\n\n                  </ion-row>\n\n                </ion-grid>\n\n          </ion-card-header>\n\n        \n\n          <ion-card-content>\n\n              <ion-card>\n\n                  <ion-card-header>\n\n                  </ion-card-header>\n\n                  <ion-card-content>\n\n                   <p>{{e.descricao_enquete}}</p>\n\n                  </ion-card-content>\n\n                \n\n                </ion-card>\n\n          </ion-card-content>\n\n          \n\n          <div class="spacer" style="width:300px;height:10px;" id="enquetes-spacer8"></div>\n\n\n\n        <form [formGroup]="validaVotacao" id="enquetes-form7">\n\n          <ion-item id="enquetes-textarea3">\n\n            <ion-label>\n\n              Comentário\n\n            </ion-label>\n\n            <ion-textarea placeholder="" class="validaVotacao" formControlName="comentario_voto"></ion-textarea>\n\n          </ion-item>\n\n          <div class="spacer" style="width:300px;height:24px;" id="enquetes-spacer9"></div>\n\n          <ion-item-divider color="light" id="enquetes-list-item-divider4">\n\n            Sua opinião é muito Importante\n\n          </ion-item-divider>\n\n          <ion-item>\n\n              <ion-label>\n\n                Adicione seu Voto\n\n              </ion-label>\n\n              <ion-select class="validaVotacao" formControlName="alternativa">\n\n                <ion-option value=1>\n\n                  Sim\n\n                </ion-option>\n\n                <ion-option value=2>\n\n                  Não\n\n                </ion-option>\n\n              </ion-select>\n\n            </ion-item>\n\n        </form>\n\n        <button (click)="votacaoEnquete()"id="enquetes-button11" ion-button color="positive" block>\n\n            Concluir\n\n        </button>\n\n      </ion-card>\n\n    </div>\n\n  </ion-list>\n\n  \n\n    \n\n\n\n  \n\n</ion-content>'/*ion-inline-end:"C:\xampp\htdocs\Aplicativo-\src\pages\enquetes\enquetes.html"*/
+            selector: 'page-enquetes',template:/*ion-inline-start:"C:\xampp\htdocs\Aplicativo-\src\pages\enquetes\enquetes.html"*/'<ion-header>\n\n  <ion-navbar color="camara">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-buttons start>\n\n      <button ion-button icon-only>\n\n        \n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>\n\n      Enquetes\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding id="page11">\n\n  <ion-list *ngFor="let e of enquetes">\n\n\n\n    <div>\n\n      <ion-card padding="10px">\n\n\n\n          <ion-card-header>\n\n              <ion-item-divider color="light" id="enquetes-list-item-divider4">\n\n                  Votação Atualizada\n\n                </ion-item-divider>\n\n              <ion-grid>\n\n                  <ion-row>\n\n                    <ion-col>\n\n                      <div><h5>A Favor:</h5>{{e.num_votos_afavor}} </div>\n\n                    </ion-col>\n\n                    <ion-col>\n\n                        <div> \n\n                        </div>\n\n                      </ion-col>\n\n                    <ion-col>\n\n                      <div><h5>Contra:</h5> {{e.num_votos_contra}}</div>\n\n                    </ion-col>\n\n                  </ion-row>\n\n                </ion-grid>\n\n          </ion-card-header>\n\n        \n\n          <ion-card-content>\n\n              <ion-card>\n\n                  <ion-card-header>\n\n                  </ion-card-header>\n\n                  <ion-card-content>\n\n                   <p>{{e.descricao_enquete}}</p>\n\n                  </ion-card-content>\n\n                \n\n                </ion-card>\n\n          </ion-card-content>\n\n          \n\n          <div class="spacer" style="width:300px;height:10px;" id="enquetes-spacer8"></div>\n\n\n\n        <form [formGroup]="validaVotacao" id="enquetes-form7">\n\n          <ion-item id="enquetes-textarea3">\n\n            <ion-label>\n\n              Comentário\n\n            </ion-label>\n\n            <ion-textarea placeholder="" class="validaVotacao" formControlName="comentario_voto"></ion-textarea>\n\n          </ion-item>\n\n          <div class="spacer" style="width:300px;height:24px;" id="enquetes-spacer9"></div>\n\n          <ion-item-divider color="light" id="enquetes-list-item-divider4">\n\n            Sua opinião é muito Importante\n\n          </ion-item-divider>\n\n          <ion-item>\n\n              <ion-label>\n\n                Adicione seu Voto\n\n              </ion-label>\n\n              <ion-select class="validaVotacao" formControlName="alternativa">\n\n                <ion-option value=1>\n\n                  Sim\n\n                </ion-option>\n\n                <ion-option value=2>\n\n                  Não\n\n                </ion-option>\n\n              </ion-select>\n\n            </ion-item>\n\n        </form>\n\n        <button (click)="votacaoEnquete()"id="enquetes-button11" ion-button color="positive" block>\n\n            Concluir\n\n        </button>\n\n      </ion-card>\n\n    </div>\n\n  </ion-list>\n\n  \n\n    \n\n\n\n  \n\n</ion-content>'/*ion-inline-end:"C:\xampp\htdocs\Aplicativo-\src\pages\enquetes\enquetes.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */],

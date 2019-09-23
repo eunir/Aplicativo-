@@ -30553,8 +30553,17 @@ ion-navbar.toolbar {
   text-align: center;
 }
 
-.loginCard {
-  border-top: 3px solid colorofyourchosing;
+page-login .error {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+.login {
+  border-width: 3px;
+  border-style: groove;
+  border-radius: 10px 10px 10px 10px;
+  border-color: #006400;
+  padding: 2px;
 }
 
 .card-background-page ion-card-header {

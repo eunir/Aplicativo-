@@ -2,7 +2,7 @@
     
 </ion-header>
 <ion-content padding id="page5" class="content">
-    <div class="spacer" style="width:300px;height:80px;" id="login-spacer1"></div>
+    <div class="spacer" style="width:300px;height:40px;" id="login-spacer1"></div>
   <div class="login">
     <ion-card>
 
@@ -40,10 +40,6 @@
                 <button ion-button block outline color="camara" type="submit">Login</button>
               </form>
             
-              <button id="login-button1" ion-button color="camara" block on-click="goToPgMeuVereador()">
-                Acessar
-              </button>
-            
               <button ion-button full icon-left (click)='loginFacebook();'>
                 <ion-icon name="logo-facebook"></ion-icon>Login com Facebook
               </button>
@@ -51,6 +47,9 @@
               <button id="login-button2" ion-button color="light" block style="color:camara;" on-click="goToCadastreSe()">
                 Ou Cadastre-se
               </button>
+              <button id="login-button1" ion-button color="camara" block on-click="goToPgMeuVereador()">
+                  Acessar
+                </button>
         </ion-card-content>
       
       </ion-card>

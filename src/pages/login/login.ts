@@ -91,7 +91,7 @@ export class LoginPage {
       });
         
   }
-  
+  //============================================================================
   //Login via facebook
   loginFacebook() {
     let permissions = new Array<string>();
@@ -109,14 +109,15 @@ export class LoginPage {
           usuario.email = res.email;
           usuario.senha = res.id;
           usuario.login = res.email;
-        
+          
           this.logar(usuario);
+          this.navCtrl.setRoot(MeuVereadorPage);
       }, (error) => {
-        alert(error);
+        alert('Não foi possível realizar login!');
         console.log('ERRO LOGIN: ',error);
       })
     }, (error) => {
-      alert(error);
+      alert('Não foi possível realizar login!');
     });
   }
  
@@ -126,7 +127,7 @@ export class LoginPage {
         console.log('Usuario cadastrado via facebook com sucesso!');
     //})
   }
-
+//==================================================================================
   goToCadastreSe(params){
     if (!params) params = {};
     this.navCtrl.push(CadastreSePage);

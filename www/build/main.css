@@ -30566,6 +30566,12 @@ page-login .error {
   padding: 2px;
 }
 
+page-mandato .webPage {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .card-background-page ion-card-header {
   position: relative;
   text-align: left;
